@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Реєстрація</title>
+  <link  href="imagies\headIcon.jpg" rel="shortcut icon" href="headIcon.jpg" type="image/png">
+  <link rel="stylesheet" href="css\style.css">
+
+<!-- <script  type="module" src="js\jsRecommendationOnLoad.js"></script>
+<script type="module" src="js\jsValidation.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.js"></script>
+
+
+
+</head>
+
+<body class='bg'>
+
+
+  <header>
+   <h1 align="middle">
+     Реєстрація на сайті
+   </h1>
+  </header>
+
+
+
+  <div class="drop">
+    <button class="dropbtn">Меню</button>
+    <div class="dropContent">
+      <a href="index.html"><b>Головна сторінка</b></a>
+    </div>
+  </div>
+
+  <a href="#ModalWindow" id="ModalWindowClose">Натисніть для підсказки</a>
+
+  <div id="ModalWindow" class="Modal">
+      <div class="Modal_Body">
+        <p id="hint">В полі емейл, потрібно ввести вашу<br>
+              електронну адресу в форматі example@example.com.<br>
+              Номер в форматі +38 (095) 526 35 82
+            </p>
+          <a href="#ModalWindowClose">Закрити</a>
+      </div>
+  </div>
+
+  <section align="middle">
+
+  <form id="My_Form",class="validate", method="post", name="form">
+  <div class="registration_fields">
+  <p>Ім'я: <br><input id="Name_id"type="firstName" placeholder="Ім'я" name="first_name"   ></p>
+    <p>Прізвище: <br><input type="lastName" placeholder="Прізвище" name="last_name" ></p>
+    <p>Ваш емейл:<br> <input type="email" placeholder="Емейл" name="email" ></p>
+    <p>Пароль:<br> <input type="password" placeholder="Пароль" name="password"></p>
+    <p>Номер телефону:<br> <input type="tel" placeholder="Номер" name="number" ></p>
+    <input id="send_btn"type="Submit" value="Відправити">
+  </div>
+  </form>
+
+  </section>
+
+
+  <div class="response">
+      <div id="response-popup">
+          <div class="response-content">
+
+          </div>
+      </div>
+  </div>
+
+<script type="module" src="js\jQueryValidation.js"></script>
+
+
+</body>
+</html>
