@@ -1,8 +1,9 @@
 const express = require("express")
 const path = require("path")
-const PORT = 3000
+const PORT = process.env.PORT || 80
 
 const app = express()
+
 const jsonParser = express.json();
 
 app.use(express.static(path.resolve(__dirname, 'public')))
