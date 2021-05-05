@@ -12,14 +12,14 @@ $(function(){
        first_name:
        {
          required:true,
-         pattern: /^[а-яА-ЯA-Za-zіІЇїЄє]+/
+         pattern: /^[а-яА-ЯA-Za-zіІЇїЄє]+$/
             
        },
        last_name:
        {
          required:true,
 
-         pattern: /^[а-яА-ЯA-Za-zіІЇїЄє]+/
+         pattern: /^[а-яА-ЯA-Za-zіІЇїЄє]+$/
        },
        number:
        {
