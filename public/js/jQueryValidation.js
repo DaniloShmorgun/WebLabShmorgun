@@ -12,27 +12,20 @@ $(function(){
        first_name:
        {
          required:true,
-
-         nowhitespace: true,
-
-         lettersonly: true
-           
+         pattern: /^[а-яА-ЯA-Za-zіІЇїЄє]+/
+            
        },
        last_name:
        {
          required:true,
-      
-         nowhitespace: true,
 
-         lettersonly: true
-       
+         pattern: /^[а-яА-ЯA-Za-zіІЇїЄє]+/
        },
        number:
        {
         required:true,
-         number: true,
-         minlength: 10,
-         maxlength: 10,
+         minlength: 12,
+         maxlength: 12,
    
        },
        password:
@@ -60,7 +53,8 @@ required: 'Будь ласка, введіть пароль',
        number:{
          required: 'Будь ласка, введіть номер',
     
-         minlength:"Будь ласка, введіть номер у </br> вигляді 10 цифр"
+         minlength:"Будь ласка, введіть номер у </br> вигляді 12 цифр",
+         maxlength:"Будь ласка, введіть номер у </br> вигляді 12 цифр"
          
            }
      },
