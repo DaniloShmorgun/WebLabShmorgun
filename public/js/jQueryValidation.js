@@ -23,9 +23,10 @@ $(function(){
        },
        number:
        {
+         
         required:true,
-         minlength: 12,
-         maxlength: 12,
+        pattern: /^\d{12}/
+        
    
        },
        password:
@@ -42,20 +43,19 @@ $(function(){
 
       first_name:{
         required: "Будь ласка, введіть ім'я",
+        pattern:"Будь ласка, введіть ім'я кирилицею або латиницею"
       },
        last_name:{
         required: 'Будь ласка, введіть прізвище',
+        pattern:"Будь ласка, введіть ім'я кирилицею або латиницею"
        },
 
        password:{
-required: 'Будь ласка, введіть пароль',
+       required: 'Будь ласка, введіть пароль',
        },
        number:{
          required: 'Будь ласка, введіть номер',
-    
-         minlength:"Будь ласка, введіть номер у </br> вигляді 12 цифр",
-         maxlength:"Будь ласка, введіть номер у </br> вигляді 12 цифр"
-         
+         pattern:"Будь ласка, введіть номер у </br> вигляді 12 цифр"
            }
      },
     submitHandler: function (form) {
