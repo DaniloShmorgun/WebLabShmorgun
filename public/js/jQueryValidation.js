@@ -12,28 +12,28 @@ $(function(){
        first_name:
        {
          required:true,
-   /*
+
          nowhitespace: true,
 
          lettersonly: true
-            */
+           
        },
        last_name:
        {
          required:true,
-            /*
+      
          nowhitespace: true,
 
          lettersonly: true
-         */
+       
        },
        number:
        {
         required:true,
-        /*
+         number: true,
          minlength: 10,
          maxlength: 10,
-         */
+   
        },
        password:
        {
@@ -59,9 +59,9 @@ required: 'Будь ласка, введіть пароль',
        },
        number:{
          required: 'Будь ласка, введіть номер',
-             /*
+    
          minlength:"Будь ласка, введіть номер у </br> вигляді 10 цифр"
-             */
+         
            }
      },
     submitHandler: function (form) {
